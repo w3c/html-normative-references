@@ -26,7 +26,7 @@ $.getJSON("data.json", function (data) {
         ;
         $td.clone().text(info.type).addClass("type").appendTo($tr);
         $td.clone().text(info.stable ? "✓" : "☠").addClass("stability").appendTo($tr);
-        $td.clone().text(info.notes).appendTo($tr);
+        $td.clone().html(info.notes).appendTo($tr);
         $tbody.append($tr);
     });
 });
