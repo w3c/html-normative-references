@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Normative References Analysis</title>
+    <link rel='stylesheet' href='bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='bootstrap/css/bootstrap-theme.min.css'>
+    <link rel='stylesheet' href='i-love-normative-references.css'>
+  </head>
+  <body>
+    <header class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <h1 class="navbar-brand">Normative References Analysis</h1>
+        </div>
+      </div>
+    </header>
+    <div class="container content">
+      <h2>Key</h2>
+      <table class='table table-condensed'>
+        <tr class='unknown'><td>Unknown status
+        <tr class='stable'><td>Stable document, doesn't matter if it's weak or strong
+        <tr class='weak unstable'><td>Unstable, but weak (not a problem)
+        <tr class='strong unstable'><td>Unstable and strong (a problem)
+      </table>
+      
+      <h2>Data</h2>
+      <table class='table table-condensed' id='data'>
+        <thead>
+          <th>#
+          <th>Title
+          <th>Type
+          <th>Stable
+          <th>Notes
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src='jquery-2.1.1.min.js'></script>
+    <script src='normative-references-rock-my-pants.js'></script>
+  </body>
+</html>

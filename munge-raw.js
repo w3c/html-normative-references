@@ -33,6 +33,7 @@ for (var k in raw) {
             ,   titles: []
             ,   type:   "unknown"
             ,   notes:  "XXX"
+            ,   stable: false
             }
         ;
         if (/<a/i.test(html)) {
