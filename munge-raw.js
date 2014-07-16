@@ -13,10 +13,40 @@
 //      res[$dt.text().replace(/[\[\]]/g, "")] = cnt.join("\n"); })
 //  copy(JSON.stringify(res, null, 4))
 
+var fs = require("fs")
+,   pth = require("path")
+,   jn = pth.join
+,   rel = function (path) { return jn(__dirname, path); }
+,   rfs = function (f) { return fs.readFileSync(f, { encoding: "utf8" }); }
+,   wfs = function (f, data) { return fs.writeFileSync(f, data, { encoding: "utf8" }); }
+,   raw = JSON.parse(rfs(rel("raw-data-20140716.json")))
+,   res = {}
+;
 
+// eliminate non-normative
+for (var k in raw) {
+    if (raw.hasOwnProperty(k) && !/non-normative/i.test(raw[k])) {
+        var html = raw[k]
+        ,   ref = {
+                html:   html
+            ,   urls:   []
+            ,   titles: []
+            ,   type:   "unknown"
+            ,   notes:  "XXX"
+            }
+        ;
+        if (/<a/i.test(html)) {
+            html.replace(/<a\s+href="([^"]*)"\s*>(.*?)<\/a>/gi, function (m, p1, p2) {
+                if (/^http/.test(p2)) return;
+                ref.urls.push(p1);
+                ref.titles.push(p2);
+            });
+        }
+        else {
+            ref.titles.push(html.replace(/.*<cite>(.*)<\/cite>.*/, "$1"));
+        }
+        res[k] = ref;
+    }
+}
 
-// XXX
-//  eliminate non-normative
-//  extract URLs
-//  add default fields
-//  dump good output
+wfs(rel("data.json"), JSON.stringify(res, null, 4));
