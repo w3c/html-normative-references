@@ -20,7 +20,7 @@
             "The 'about' URI scheme"
         ],
         "type": "weak",
-        "notes": "Used to add a couple specific locations to the <code>about</code> scheme.",
+        "notes": "Used to add a couple specific locations to the <code>about</code> scheme, resilient to broader changes made there.",
         "stable": true
     },
     "ARIA": {
@@ -31,7 +31,7 @@
         "titles": [
             "Accessible Rich Internet Applications (WAI-ARIA)"
         ],
-        "type": "weak",
+        "type": "strong",
         "notes": "Imports <code>role</code> and <code>aria-*</code> attributes and defines the binding, but relying on naming.",
         "stable": true
     },
@@ -43,9 +43,9 @@
         "titles": [
             "WAI-ARIA 1.0 User Agent Implementation Guide"
         ],
-        "type": "unknown",
-        "notes": "XXX",
-        "stable": false
+        "type": "weak",
+        "notes": "Pointed to for interpretation.",
+        "stable": true
     },
     "BCP47": {
         "html": "<cite><a href=\"http://www.ietf.org/rfc/bcp/bcp47.txt\">Tags for Identifying Languages; Matching of Language Tags</a> (URL: <a href=\"http://www.ietf.org/rfc/bcp/bcp47.txt\">http://www.ietf.org/rfc/bcp/bcp47.txt</a>)</cite>, A. Phillips, M. Davis. IETF.",
@@ -55,9 +55,9 @@
         "titles": [
             "Tags for Identifying Languages; Matching of Language Tags"
         ],
-        "type": "unknown",
-        "notes": "XXX",
-        "stable": false
+        "type": "weak",
+        "notes": "Changes to BCP47 would have no impact on the specification, it is treated as an open-ended set.",
+        "stable": true
     },
     "BIDI": {
         "html": "<cite><a href=\"http://www.unicode.org/reports/tr9/\">UAX #9: Unicode Bidirectional Algorithm</a> (URL: <a href=\"http://www.unicode.org/reports/tr9/\">http://www.unicode.org/reports/tr9/</a>)</cite>, M. Davis, A. Lanin, A. Glass. Unicode Consortium.",
@@ -67,9 +67,9 @@
         "titles": [
             "UAX #9: Unicode Bidirectional Algorithm"
         ],
-        "type": "unknown",
-        "notes": "XXX",
-        "stable": false
+        "type": "strong",
+        "notes": "Changes to BIDI could possibly require changes to some parts of the specification that interact with bidirectionality.",
+        "stable": true
     },
     "CANVAS2D": {
         "html": "\n      <ul><li><cite><a href=\"http://www.w3.org/TR/2dcontext/\">HTML Canvas 2D Context</a> (URL: <a href=\"http://www.w3.org/TR/2dcontext/\">http://www.w3.org/TR/2dcontext/</a>)</cite>, R. Cabanier, E. Graff, J. Munro, T. Wiltzius. W3C.</li>\n        <li><cite><a href=\"http://www.w3.org/html/wg/drafts/2dcontext/master/\">HTML Canvas 2D Context, Level 2 Nightly</a> (URL: <a href=\"http://www.w3.org/html/wg/drafts/2dcontext/master/\">http://www.w3.org/html/wg/drafts/2dcontext/master/</a>)</cite>, R. Cabanier, J. Mann, J. Munro, T. Wiltzius. W3C.</li>\n      </ul>",
@@ -81,8 +81,8 @@
             "HTML Canvas 2D Context",
             "HTML Canvas 2D Context, Level 2 Nightly"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Indicates how to interface with 2D canvases, but is resilient to changes made there.",
         "stable": false
     },
     "CLDR": {
@@ -93,9 +93,9 @@
         "titles": [
             "Unicode Common Locale Data Repository"
         ],
-        "type": "unknown",
-        "notes": "XXX",
-        "stable": false
+        "type": "strong",
+        "notes": "Data in the specification is imported and generated from the CLDR. It can easily be updated, though.",
+        "stable": true
     },
     "COOKIES": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc6265\">HTTP State Management Mechanism</a> (URL: <a href=\"http://tools.ietf.org/html/rfc6265\">http://tools.ietf.org/html/rfc6265</a>)</cite>, A. Barth. IETF.",
@@ -105,9 +105,9 @@
         "titles": [
             "HTTP State Management Mechanism"
         ],
-        "type": "unknown",
-        "notes": "XXX",
-        "stable": false
+        "type": "weak",
+        "notes": "All usage is by reference.",
+        "stable": true
     },
     "CORS": {
         "html": "<cite><a href=\"http://www.w3.org/TR/access-control/\">Cross-Origin Resource Sharing</a> (URL: <a href=\"http://www.w3.org/TR/access-control/\">http://www.w3.org/TR/access-control/</a>)</cite>, A. van Kesteren. W3C.",
@@ -117,9 +117,9 @@
         "titles": [
             "Cross-Origin Resource Sharing"
         ],
-        "type": "unknown",
-        "notes": "XXX",
-        "stable": false
+        "type": "strong",
+        "notes": "Used in fetching, changes would likely have an impact.",
+        "stable": true
     },
     "CSS": {
         "html": "<cite><a href=\"http://www.w3.org/TR/CSS2/\">Cascading Style Sheets Level 2 Revision 1</a> (URL: <a href=\"http://www.w3.org/TR/CSS2/\">http://www.w3.org/TR/CSS2/</a>)</cite>, B. Bos, T. Çelik, I. Hickson, H. Lie. W3C.",
@@ -129,9 +129,9 @@
         "titles": [
             "Cascading Style Sheets Level 2 Revision 1"
         ],
-        "type": "unknown",
-        "notes": "XXX",
-        "stable": false
+        "type": "weak",
+        "notes": "Used in several places, but not absolutely required. Breaking changes are not possible.",
+        "stable": true
     },
     "CSSATTR": {
         "html": "<cite><a href=\"http://www.w3.org/TR/css-style-attr/\">CSS Styling Attribute Syntax</a> (URL: <a href=\"http://www.w3.org/TR/css-style-attr/\">http://www.w3.org/TR/css-style-attr/</a>)</cite>, T. Çelik, E. Etemad. W3C.",
@@ -141,9 +141,9 @@
         "titles": [
             "CSS Styling Attribute Syntax"
         ],
-        "type": "unknown",
-        "notes": "XXX",
-        "stable": false
+        "type": "weak",
+        "notes": "Used by reference.",
+        "stable": true
     },
     "CSSCOLOR": {
         "html": "<cite><a href=\"http://www.w3.org/TR/css3-color/\">CSS Color Module Level 3</a> (URL: <a href=\"http://www.w3.org/TR/css3-color/\">http://www.w3.org/TR/css3-color/</a>)</cite>, T. Çelik, C. Lilley, L. Baron. W3C.",
@@ -153,9 +153,9 @@
         "titles": [
             "CSS Color Module Level 3"
         ],
-        "type": "unknown",
-        "notes": "XXX",
-        "stable": false
+        "type": "weak",
+        "notes": "Used by reference.",
+        "stable": true
     },
     "CSSIMAGES": {
         "html": "\n      <ul><li><cite><a href=\"http://www.w3.org/TR/css3-images/\">CSS Image Values and Replaced Content Module Level 3</a> (URL: <a href=\"http://www.w3.org/TR/css3-images/\">http://www.w3.org/TR/css3-images/</a>)</cite>, E. Etemad, T. Atkins. W3C.</li>\n        <li><cite><a href=\"http://dev.w3.org/csswg/css-images/\">CSS Image Values and Replaced Content Module</a> (URL: <a href=\"http://dev.w3.org/csswg/css-images/\">http://dev.w3.org/csswg/css-images/</a>)</cite>, E. Etemad, T. Atkins. W3C.</li>\n      </ul>",
@@ -167,8 +167,8 @@
             "CSS Image Values and Replaced Content Module Level 3",
             "CSS Image Values and Replaced Content Module"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Used essentially for definitions of things that cannot be broken.",
         "stable": false
     },
     "CSSOM": {
@@ -181,9 +181,9 @@
             "Document Object Model (DOM) Level 2 Style",
             "Cascading Style Sheets Object Model (CSSOM)"
         ],
-        "type": "unknown",
-        "notes": "XXX",
-        "stable": false
+        "type": "weak",
+        "notes": "Clean interface points.",
+        "stable": true
     },
     "CSSOMVIEW": {
         "html": "\n    <ul><li><cite><a href=\"http://www.w3.org/TR/DOM-Level-2-Style/\">Document Object Model (DOM) Level 2 Style</a> (URL: <a href=\"http://www.w3.org/TR/DOM-Level-2-Style/\">http://www.w3.org/TR/DOM-Level-2-Style/</a>)</cite>, C. Wilson, P. Le Hégaret, V. Apparao. W3C.</li>\n      <li><cite><a href=\"http://dev.w3.org/csswg/cssom-view/\">CSSOM View Module</a> (URL: <a href=\"http://dev.w3.org/csswg/cssom-view/\">http://dev.w3.org/csswg/cssom-view/</a>)</cite>, S. Pieters, G. Adams. W3C.</li>\n    </ul>",
@@ -195,9 +195,9 @@
             "Document Object Model (DOM) Level 2 Style",
             "CSSOM View Module"
         ],
-        "type": "unknown",
-        "notes": "XXX",
-        "stable": false
+        "type": "weak",
+        "notes": "Clean interface points.",
+        "stable": true
     },
     "DOM": {
         "html": "<cite><a href=\"http://www.w3.org/TR/dom/\">DOM</a> (URL: <a href=\"http://www.w3.org/TR/dom/\">http://www.w3.org/TR/dom/</a>)</cite>, A. van Kesteren, A. Gregor, Ms2ger, A. Russell, R. Berjon. W3C.",
@@ -207,8 +207,8 @@
         "titles": [
             "DOM"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "strong",
+        "notes": "Relied upon a lot. That said, the features being relied upon are not of the type that can be broken without breaking content and implementations; and the relationship is essentially through clean interfaces. The case could be made that this is in fact a weak mapping.",
         "stable": false
     },
     "DOMEVENTS": {
@@ -222,8 +222,8 @@
             "Document Object Model (DOM) Level 3 Events Specification"
         ],
         "type": "unknown",
-        "notes": "XXX",
-        "stable": false
+        "notes": "XXX (SORTA TRUE, DOUBLE-CHECK)",
+        "stable": true
     },
     "DOMPARSING": {
         "html": "<cite><a href=\"http://www.w3.org/TR/DOM-Parsing/\">DOM Parsing and Serialization</a> (URL: <a href=\"http://www.w3.org/TR/DOM-Parsing/\">http://www.w3.org/TR/DOM-Parsing/</a>)</cite>, T. Leithead. Work in Progress. W3C.",
@@ -234,7 +234,7 @@
             "DOM Parsing and Serialization"
         ],
         "type": "unknown",
-        "notes": "XXX",
+        "notes": "XXX (CR)",
         "stable": false
     },
     "ECMA262": {
@@ -247,7 +247,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "ENCODING": {
         "html": "<cite><a href=\"http://www.w3.org/TR/encoding/\">Encoding</a> (URL: <a href=\"http://www.w3.org/TR/encoding/\">http://www.w3.org/TR/encoding/</a>)</cite>, A. van Kesteren, J. Bell, A. Phillips. W3C.",
@@ -258,7 +258,7 @@
             "Encoding"
         ],
         "type": "unknown",
-        "notes": "XXX",
+        "notes": "XXX (LC)",
         "stable": false
     },
     "EVENTSOURCE": {
@@ -270,7 +270,7 @@
             "Server-Sent Events"
         ],
         "type": "unknown",
-        "notes": "XXX",
+        "notes": "XXX (CR)",
         "stable": false
     },
     "FILEAPI": {
@@ -282,7 +282,7 @@
             "File API"
         ],
         "type": "unknown",
-        "notes": "XXX",
+        "notes": "XXX (LC)",
         "stable": false
     },
     "HTTP": {
@@ -305,7 +305,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "IANAPERMHEADERS": {
         "html": "<cite><a style=\"\" href=\"http://www.iana.org/assignments/message-headers/message-headers.xhtml\">Permanent Message Header Field Names</a> (URL: <a href=\"http://www.iana.org/assignments/message-headers/message-headers.xhtml\">http://www.iana.org/assignments/message-headers/message-headers.xhtml</a>)</cite>. IANA.",
@@ -313,7 +313,7 @@
         "titles": [],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "JPEG": {
         "html": "<cite><a href=\"http://www.w3.org/Graphics/JPEG/jfif3.pdf\">JPEG File Interchange Format</a> (URL: <a href=\"http://www.w3.org/Graphics/JPEG/jfif3.pdf\">http://www.w3.org/Graphics/JPEG/jfif3.pdf</a>)</cite>, E. Hamilton.",
@@ -325,7 +325,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "MATHML": {
         "html": "<cite><a href=\"http://www.w3.org/TR/MathML/\">Mathematical Markup Language (MathML)</a> (URL: <a href=\"http://www.w3.org/TR/MathML/\">http://www.w3.org/TR/MathML/</a>)</cite>, D. Carlisle, P. Ion, R. Miner, N. Poppelier. W3C.",
@@ -337,7 +337,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "MEDIAFRAG": {
         "html": "<cite><a href=\"http://www.w3.org/TR/media-frags/\">Media Fragments URI 1.0</a> (URL: <a href=\"http://www.w3.org/TR/media-frags/\">http://www.w3.org/TR/media-frags/</a>)</cite>, R. Troncy, E. Mannens, S. Pfeiffer, D. Van Deursen. W3C.",
@@ -349,7 +349,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "MIMESNIFF": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/draft-ietf-websec-mime-sniff-03\">Media Type Sniffing</a> (URL: <a href=\"http://tools.ietf.org/html/draft-ietf-websec-mime-sniff-03\">http://tools.ietf.org/html/draft-ietf-websec-mime-sniff-03</a>)</cite>, A. Barth, I. Hickson. IETF.",
@@ -360,7 +360,7 @@
             "Media Type Sniffing"
         ],
         "type": "unknown",
-        "notes": "XXX",
+        "notes": "XXX (may be considered stable, completely implementation based)",
         "stable": false
     },
     "MNG": {
@@ -373,7 +373,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "MPEG2": {
         "html": "<cite>ISO/IEC 13818-1: Information technology — Generic coding of moving pictures and associated audio information: Systems</cite>. ISO/IEC.",
@@ -383,7 +383,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "MPEG4": {
         "html": "<cite>ISO/IEC 14496-12: ISO base media file format</cite>. ISO/IEC.",
@@ -393,7 +393,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "MQ": {
         "html": "<cite><a href=\"http://www.w3.org/TR/css3-mediaqueries/\">Media Queries</a> (URL: <a href=\"http://www.w3.org/TR/css3-mediaqueries/\">http://www.w3.org/TR/css3-mediaqueries/</a>)</cite>, H. Lie, T.  Çelik, D. Glazman, A. van Kesteren. W3C.",
@@ -405,7 +405,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "OGGSKELETONHEADERS": {
         "html": "<cite><a href=\"http://wiki.xiph.org/SkeletonHeaders\">SkeletonHeaders</a> (URL: <a href=\"http://wiki.xiph.org/SkeletonHeaders\">http://wiki.xiph.org/SkeletonHeaders</a>)</cite>. Xiph.Org.",
@@ -417,7 +417,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "OPENSEARCH": {
         "html": "<cite><a href=\"http://www.opensearch.org/Specifications/OpenSearch/1.1#Autodiscovery_in_HTML.2FXHTML\">Autodiscovery in HTML/XHTML</a> (URL: <a href=\"http://www.opensearch.org/Specifications/OpenSearch/1.1#Autodiscovery_in_HTML.2FXHTML\">http://www.opensearch.org/Specifications/OpenSearch/1.1#Autodiscovery_in_HTML.2FXHTML</a>)</cite>. In <cite>OpenSearch 1.1 Draft 4</cite>, Section 4.6.2. OpenSearch.org.",
@@ -429,7 +429,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "ORIGIN": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc6454\">The Web Origin Concept</a> (URL: <a href=\"http://tools.ietf.org/html/rfc6454\">http://tools.ietf.org/html/rfc6454</a>)</cite>, A. Barth. IETF.",
@@ -441,7 +441,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "PNG": {
         "html": "<cite><a href=\"http://www.w3.org/TR/PNG/\">Portable Network Graphics (PNG) Specification</a> (URL: <a href=\"http://www.w3.org/TR/PNG/\">http://www.w3.org/TR/PNG/</a>)</cite>, D. Duce. W3C.",
@@ -453,7 +453,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "PSL": {
         "html": "<cite><a href=\"http://publicsuffix.org/\">Public Suffix List</a> (URL: <a href=\"http://publicsuffix.org/\">http://publicsuffix.org/</a>)</cite>.\n   Mozilla Foundation.",
@@ -465,7 +465,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "PROGRESS-EVENTS": {
         "html": "<cite><a href=\"http://www.w3.org/TR/progress-events/\">Progress Events</a> (URL: <a href=\"http://www.w3.org/TR/progress-events/\">http://www.w3.org/TR/progress-events/</a>)</cite>, A. van Kesteren, C. McCathie Nevile; J. Song. W3C.",
@@ -477,7 +477,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC1034": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc1034\">Domain Names - Concepts and Facilities</a> (URL: <a href=\"http://tools.ietf.org/html/rfc1034\">http://tools.ietf.org/html/rfc1034</a>)</cite>, P. Mockapetris. IETF, November 1987.",
@@ -489,7 +489,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC1123": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc1123\">Requirements for Internet Hosts -- Application and Support</a> (URL: <a href=\"http://tools.ietf.org/html/rfc1123\">http://tools.ietf.org/html/rfc1123</a>)</cite>, R. Braden. IETF, October 1989.",
@@ -501,7 +501,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC2046": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc2046\">Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types</a> (URL: <a href=\"http://tools.ietf.org/html/rfc2046\">http://tools.ietf.org/html/rfc2046</a>)</cite>, N. Freed, N.  Borenstein. IETF.",
@@ -513,7 +513,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC2119": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc2119\">Key words for use in RFCs to Indicate Requirement Levels</a> (URL: <a href=\"http://tools.ietf.org/html/rfc2119\">http://tools.ietf.org/html/rfc2119</a>)</cite>, S. Bradner. IETF.",
@@ -525,7 +525,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC2313": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc2313\">PKCS #1: RSA Encryption</a> (URL: <a href=\"http://tools.ietf.org/html/rfc2313\">http://tools.ietf.org/html/rfc2313</a>)</cite>, B. Kaliski. IETF.",
@@ -537,7 +537,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC2318": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc2318\">The text/css Media Type</a> (URL: <a href=\"http://tools.ietf.org/html/rfc2318\">http://tools.ietf.org/html/rfc2318</a>)</cite>, H. Lie, B. Bos, C. Lilley. IETF.",
@@ -549,7 +549,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC2388": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc2388\">Returning Values from Forms: multipart/form-data</a> (URL: <a href=\"http://tools.ietf.org/html/rfc2388\">http://tools.ietf.org/html/rfc2388</a>)</cite>, L. Masinter. IETF.",
@@ -561,7 +561,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC2397": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc2397\">The \"data\" URL scheme</a> (URL: <a href=\"http://tools.ietf.org/html/rfc2397\">http://tools.ietf.org/html/rfc2397</a>)</cite>, L. Masinter. IETF.",
@@ -573,7 +573,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC2483": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc2483\">URI Resolution Services Necessary for URN Resolution</a> (URL: <a href=\"http://tools.ietf.org/html/rfc2483\">http://tools.ietf.org/html/rfc2483</a>)</cite>, M. Mealling, R. Daniel. IETF.",
@@ -585,7 +585,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC3676": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc3676\">The Text/Plain Format and DelSp Parameters</a> (URL: <a href=\"http://tools.ietf.org/html/rfc3676\">http://tools.ietf.org/html/rfc3676</a>)</cite>, R. Gellens. IETF.",
@@ -597,7 +597,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC3023": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc3023\">XML Media Types</a> (URL: <a href=\"http://tools.ietf.org/html/rfc3023\">http://tools.ietf.org/html/rfc3023</a>)</cite>, M. Murata, S. St. Laurent, D. Kohn. IETF.",
@@ -609,7 +609,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC3279": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc3279\">Algorithms and Identifiers for the Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile</a> (URL: <a href=\"http://tools.ietf.org/html/rfc3279\">http://tools.ietf.org/html/rfc3279</a>)</cite>, W. Polk, R. Housley, L. Bassham. IETF.",
@@ -621,7 +621,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC3490": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc3490\">Internationalizing Domain Names in Applications (IDNA)</a> (URL: <a href=\"http://tools.ietf.org/html/rfc3490\">http://tools.ietf.org/html/rfc3490</a>)</cite>, P. Faltstrom, P. Hoffman, A. Costello. IETF.",
@@ -633,7 +633,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC3629": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc3629\">UTF-8, a transformation format of ISO 10646</a> (URL: <a href=\"http://tools.ietf.org/html/rfc3629\">http://tools.ietf.org/html/rfc3629</a>)</cite>, F. Yergeau. IETF.",
@@ -645,7 +645,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC4281": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc4281\">The Codecs Parameter for \"Bucket\" Media Types</a> (URL: <a href=\"http://tools.ietf.org/html/rfc4281\">http://tools.ietf.org/html/rfc4281</a>)</cite>, R. Gellens, D. Singer, P. Frojdh. IETF.",
@@ -657,7 +657,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC4395": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc4395\">Guidelines and Registration Procedures for New URI Schemes</a> (URL: <a href=\"http://tools.ietf.org/html/rfc4395\">http://tools.ietf.org/html/rfc4395</a>)</cite>, T. Hansen, T. Hardie, L. Masinter. IETF.",
@@ -669,7 +669,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC4648": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc4648\">The Base16, Base32, and Base64 Data Encodings</a> (URL: <a href=\"http://tools.ietf.org/html/rfc4648\">http://tools.ietf.org/html/rfc4648</a>)</cite>, S. Josefsson. IETF.",
@@ -681,7 +681,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC5280": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc5280\">Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile</a> (URL: <a href=\"http://tools.ietf.org/html/rfc5280\">http://tools.ietf.org/html/rfc5280</a>)</cite>, D. Cooper, S. Santesson, S. Farrell, S. Boeyen, R. Housley, W. Polk. IETF.",
@@ -693,7 +693,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC5322": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc5322\">Internet Message Format</a> (URL: <a href=\"http://tools.ietf.org/html/rfc5322\">http://tools.ietf.org/html/rfc5322</a>)</cite>, P. Resnick. IETF.",
@@ -705,7 +705,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "RFC6266": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc6266\">Use of the Content-Disposition Header Field in the Hypertext Transfer Protocol (HTTP)</a> (URL: <a href=\"http://tools.ietf.org/html/rfc6266\">http://tools.ietf.org/html/rfc6266</a>)</cite>, J. Reschke. IETF.",
@@ -717,7 +717,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "SELECTORS": {
         "html": "<cite><a href=\"http://www.w3.org/TR/selectors/\">Selectors</a> (URL: <a href=\"http://www.w3.org/TR/selectors/\">http://www.w3.org/TR/selectors/</a>)</cite>, E. Etemad, T. Atkins. W3C.",
@@ -729,7 +729,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "SRGB": {
         "html": "<cite lang=\"en-GB\"><a href=\"http://webstore.iec.ch/webstore/webstore.nsf/artnum/025408!OpenDocument&amp;Click=\">IEC 61966-2-1: Multimedia systems and equipment — Colour measurement and management — Part 2-1: Colour management — Default RGB colour space — sRGB</a> (URL: <a href=\"http://webstore.iec.ch/webstore/webstore.nsf/artnum/025408!OpenDocument&amp;Click=\">http://webstore.iec.ch/webstore/webstore.nsf/artnum/025408!OpenDocument&amp;Click=</a>)</cite>. IEC.",
@@ -741,7 +741,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "SVG": {
         "html": "<cite><a href=\"http://www.w3.org/TR/SVG/\">Scalable Vector Graphics (SVG) 1.1 (Second Edition)</a> (URL: <a href=\"http://www.w3.org/TR/SVG/\">http://www.w3.org/TR/SVG/</a>)</cite>, E. Dahlström et al. W3C.",
@@ -753,7 +753,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "TYPEDARRAY": {
         "html": "<cite><a href=\"https://www.khronos.org/registry/typedarray/specs/1.0/\">Typed Array Specification</a> (URL: <a href=\"https://www.khronos.org/registry/typedarray/specs/1.0/\">https://www.khronos.org/registry/typedarray/specs/1.0/</a>)</cite>, D. Herman, K. Russell. Khronos.",
@@ -765,7 +765,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "UNICODE": {
         "html": "<cite><a href=\"http://www.unicode.org/versions/\">The Unicode Standard</a> (URL: <a href=\"http://www.unicode.org/versions/\">http://www.unicode.org/versions/</a>)</cite>. Unicode Consortium.",
@@ -777,7 +777,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "URL": {
         "html": "<cite><a href=\"http://url.spec.whatwg.org/\">URL</a> (URL: <a href=\"http://url.spec.whatwg.org/\">http://url.spec.whatwg.org/</a>)</cite>, A. van Kesteren. WHATWG.",
@@ -825,7 +825,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "WEBSTORAGE": {
         "html": "<cite><a href=\"http://www.w3.org/TR/webstorage/\">Web Storage</a> (URL: <a href=\"http://www.w3.org/TR/webstorage/\">http://www.w3.org/TR/webstorage/</a>)</cite>, I. Hickson. W3C.",
@@ -837,7 +837,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "WSP": {
         "html": "<cite><a href=\"http://tools.ietf.org/html/rfc6455\">The WebSocket protocol</a> (URL: <a href=\"http://tools.ietf.org/html/rfc6455\">http://tools.ietf.org/html/rfc6455</a>)</cite>, I. Fette, A. Melnikov. IETF.",
@@ -849,7 +849,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "X690": {
         "html": "<cite><a href=\"http://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf\">Recommendation X.690 — Information Technology — ASN.1 Encoding Rules — Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER), and Distinguished Encoding Rules (DER)</a> (URL: <a href=\"http://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf\">http://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf</a>)</cite>. International Telecommunication Union.",
@@ -861,7 +861,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "XML": {
         "html": "<cite><a href=\"http://www.w3.org/TR/xml/\">Extensible Markup Language</a> (URL: <a href=\"http://www.w3.org/TR/xml/\">http://www.w3.org/TR/xml/</a>)</cite>, T. Bray, J. Paoli, C. Sperberg-McQueen, E. Maler, F. Yergeau. W3C.",
@@ -873,7 +873,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "XMLBASE": {
         "html": "<cite><a href=\"http://www.w3.org/TR/xmlbase/\">XML Base</a> (URL: <a href=\"http://www.w3.org/TR/xmlbase/\">http://www.w3.org/TR/xmlbase/</a>)</cite>, J. Marsh, R. Tobin. W3C.",
@@ -885,7 +885,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "XMLNS": {
         "html": "<cite><a href=\"http://www.w3.org/TR/xml-names/\">Namespaces in XML</a> (URL: <a href=\"http://www.w3.org/TR/xml-names/\">http://www.w3.org/TR/xml-names/</a>)</cite>, T. Bray, D. Hollander, A. Layman, R. Tobin. W3C.",
@@ -897,7 +897,7 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     },
     "XPATH10": {
         "html": "<cite><a href=\"http://www.w3.org/TR/1999/REC-xpath-19991116\">XML Path Language (XPath) Version 1.0</a> (URL: <a href=\"http://www.w3.org/TR/1999/REC-xpath-19991116\">http://www.w3.org/TR/1999/REC-xpath-19991116</a>)</cite>, J. Clark, S. DeRose. W3C.",
@@ -909,6 +909,6 @@
         ],
         "type": "unknown",
         "notes": "XXX",
-        "stable": false
+        "stable": true
     }
 }
