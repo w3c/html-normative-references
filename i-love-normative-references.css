@@ -35,3 +35,15 @@ tr.weak.unstable td, tr.weak.unstable th {
 tr.strong.unstable td, tr.strong.unstable th {
     background: #f2dede;
 }
+tr.stable td.stability {
+    font-size:  1.5em;
+    line-height:    1;
+}
+tr.unstable td.stability {
+    font-size:  2.5em;
+    line-height:    1;
+    color:  #da0;
+}
+/*.stable, .unstable {
+}
+*/

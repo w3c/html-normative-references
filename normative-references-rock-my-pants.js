@@ -1,13 +1,8 @@
 /* jshint -W100 */
 
 $.getJSON("data.json", function (data) {
-    var $tbody = $("#data tbody")
-    ,   total = 0
-    ,   done = 0
-    ;
+    var $tbody = $("#data tbody");
     $.each(data, function (ref, info) {
-        total++;
-        if (info.type !== "unknown") done++;
         var $tr = $("<tr><th></th></tr>")
                     .addClass(info.type)
                     .addClass(info.stable ? "stable" : "unstable")
@@ -34,8 +29,5 @@ $.getJSON("data.json", function (data) {
         $td.clone().html(info.notes).appendTo($tr);
         $tbody.append($tr);
     });
-    $("#total").text(total);
-    $("#done").text(done);
-    $("#percent").text(((done/total) * 100).toFixed(2) + "%");
 });
 

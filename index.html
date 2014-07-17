@@ -26,8 +26,32 @@
       
       <h2>Data</h2>
       <p>
-        Of the <span id='total'>XXX</span> references, <span id='done'>XXX</span> have been
-        processed so far (<span id='percent'>XXX</span>).
+        It is important to note that many factors can be taken into account in order to declare
+        a reference “weak” (basically unproblematic) instead of “strong” (which requires stability
+        at the risk of breaking the HTML specification). These include:
+      </p>
+      <ul>
+        <li>
+          Interfacing through clean imports of named items, in such a way that HTML is sufficiently
+          shielded from the internal details of the import.
+        </li>
+        <li>
+          The reference (or its applicable parts) is deployed in such a way that changes to it that
+          could affect HTML would cause major breakage in non-negligible amounts of deployed
+          content. Such changes are therefore considered impossible.
+        </li>
+        <li>
+          The reference is broadly implemented, tested, and/or deployed; and if the specification
+          defining it is not yet “stable” it is only due to incidental issues (e.g. unavailable
+          editor, overwhelming process). It effectively cannot change in a breaking manner.
+        </li>
+      </ul>
+      <p>
+        The amount of usage and the granularity of the reference also matter. For instance, a good
+        case could be made for the DOM to be a weak reference but it is of such importance that we
+        chose to err on the side of marking it “strong”. Conversely, some massive specification may
+        be imported (e.g. ASN.1) but the reference is fine-grained to a small part and is therefore
+        well-contained, classifying it as within the realm of safety.
       </p>
       <table class='table table-condensed' id='data'>
         <thead>

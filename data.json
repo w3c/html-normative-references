@@ -727,8 +727,8 @@
         "titles": [
             "Selectors"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Provides concrete bindings to implement selectors in HTML, cannot be broken.",
         "stable": true
     },
     "SRGB": {
@@ -739,8 +739,8 @@
         "titles": [
             "IEC 61966-2-1: Multimedia systems and equipment — Colour measurement and management — Part 2-1: Colour management — Default RGB colour space — sRGB"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Definition of colour.",
         "stable": true
     },
     "SVG": {
@@ -751,8 +751,8 @@
         "titles": [
             "Scalable Vector Graphics (SVG) 1.1 (Second Edition)"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Has some relatively strong ties in some places, but these cannot be broken without breaking deployed content.",
         "stable": true
     },
     "TYPEDARRAY": {
@@ -763,8 +763,8 @@
         "titles": [
             "Typed Array Specification"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Importing interfaces.",
         "stable": true
     },
     "UNICODE": {
@@ -775,8 +775,8 @@
         "titles": [
             "The Unicode Standard"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Heavily relied-upon, but unbreakable.",
         "stable": true
     },
     "URL": {
@@ -787,8 +787,8 @@
         "titles": [
             "URL"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Imports definitions and interfaces, but orthogonally. URLs cannot be broken without breaking the Web.",
         "stable": false
     },
     "WEBIDL": {
@@ -799,8 +799,8 @@
         "titles": [
             "Web IDL"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Relied-upon, but the syntax-only approach is favoured for this specific reference.",
         "stable": false
     },
     "WEBMSG": {
@@ -811,8 +811,8 @@
         "titles": [
             "Web Messaging"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Interface import.",
         "stable": false
     },
     "WEBMCG": {
@@ -823,8 +823,8 @@
         "titles": [
             "WebM Container Guidelines"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Clean extraction of information.",
         "stable": true
     },
     "WEBSTORAGE": {
@@ -835,8 +835,8 @@
         "titles": [
             "Web Storage"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Orthogonal integration.",
         "stable": true
     },
     "WSP": {
@@ -847,8 +847,8 @@
         "titles": [
             "The WebSocket protocol"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Importing some terms.",
         "stable": true
     },
     "X690": {
@@ -859,8 +859,8 @@
         "titles": [
             "Recommendation X.690 — Information Technology — ASN.1 Encoding Rules — Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER), and Distinguished Encoding Rules (DER)"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Format import.",
         "stable": true
     },
     "XML": {
@@ -871,8 +871,8 @@
         "titles": [
             "Extensible Markup Language"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "All interfacing is through clean references; one (small, arguable) wilful violation to note for template processing.",
         "stable": true
     },
     "XMLBASE": {
@@ -883,8 +883,8 @@
         "titles": [
             "XML Base"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Clean import.",
         "stable": true
     },
     "XMLNS": {
@@ -895,8 +895,8 @@
         "titles": [
             "Namespaces in XML"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Relatively heavily used, but orthogonally.",
         "stable": true
     },
     "XPATH10": {
@@ -907,8 +907,8 @@
         "titles": [
             "XML Path Language (XPath) Version 1.0"
         ],
-        "type": "unknown",
-        "notes": "XXX",
+        "type": "weak",
+        "notes": "Import, though with one notable wilful violation.",
         "stable": true
     }
 }
