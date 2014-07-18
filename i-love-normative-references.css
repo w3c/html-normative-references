@@ -44,6 +44,20 @@ tr.unstable td.stability {
     line-height:    1;
     color:  #da0;
 }
-/*.stable, .unstable {
+
+/* sorting */
+.sorting {
+    white-space: nowrap;
 }
-*/
+.sorting::after {
+    content:    "  ▼";
+    color:  #da0;
+}
+.sortable {
+    white-space: nowrap;
+    cursor: pointer;
+}
+.sortable::after {
+    content:    "  ▽";
+    color:  #da0;
+}
